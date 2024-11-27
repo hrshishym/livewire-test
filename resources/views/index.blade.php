@@ -9,15 +9,15 @@
     @livewireStyles
 </head>
 <body class="p-5">
-    <h1>カウントアップ</h1>
-    <livewire:counter-sample />
     @if($id != null)
-        <hr>
         <h1>トグル</h1>
         <livewire:star-component :id="$id" />
         <hr>
         <a href="/">戻る</a>
     @else
+    <h1>カウントアップサンプル</h1>
+    <livewire:counter-sample />
+    <hr>
     <!-- 全てのStar->idへのリンクを作成 -->
     @php
         $stars = App\Models\Star::all();
