@@ -14,4 +14,5 @@
 sail npm i
 sail npm run build
 sail artisan migrate
+sail artisan db:seed --class=StarSeed
 ```
